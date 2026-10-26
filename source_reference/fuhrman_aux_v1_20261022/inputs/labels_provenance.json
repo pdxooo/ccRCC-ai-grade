@@ -1,0 +1,7 @@
+{
+ "source": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/452/S-BIAD2452/Files/Korean%20Cohort/Korean%20clinical%20Data.xlsx",
+ "xlsx_sha256": "0c600a8798a44604d18225edcf7eb6706103081694ffb7375a8fea3fa673c530",
+ "csv_sha256": "65b19160f8f8cfff5a7b541596b276e9d998b4115287a3a0e43f8f417dec6fb0",
+ "rows": 300,
+ "decision": "database labels are the ground truth (user, 2026-10-21); paper Table 1 discrepancies disclosed only"
+}

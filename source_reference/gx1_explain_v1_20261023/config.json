@@ -1,0 +1,13 @@
+{
+  "version": "gx1_explain_v1_20261023",
+  "gx1_dir": "../grade_ext_v1_20261022",
+  "encoder": "phikon-v2",
+  "high_patch_p": 0.5,
+  "top_attention_fraction": 0.1,
+  "max_reconstruction_error": 0.0001,
+  "ai_upgrade_threshold": 2.5,
+  "p21_cutoff_percent": 2.0,
+  "if_offset": 0.01,
+  "if_sha256": {"korea_if.csv": "98a798b246828ea0f7ec5492f684d8fb10cf9967ada9494b67fd12bd4edf3dc7",
+                "scotland_if.csv": "553c76739c242d9f94e754e6285e48b06cbdf2db5752cd156867fa0b77797fb7"}
+}

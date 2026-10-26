@@ -1,0 +1,427 @@
+{
+  "encoder": "phikon-v2",
+  "cohorts": {
+    "korea": {
+      "isup2": {
+        "n": 127,
+        "events": 18,
+        "c_ai": 0.6627246925260171,
+        "cox_ai": [
+          [
+            2.7807656239110674,
+            1.3467608995305154,
+            5.741670594848081,
+            0.005695833030493814
+          ]
+        ],
+        "cox_leibovich_ai": [
+          [
+            1.7293695465567112,
+            1.3301964417777332,
+            2.2483288442426113,
+            4.295082482939429e-05
+          ],
+          [
+            1.186208369388239,
+            0.5250763495463586,
+            2.679782277039073,
+            0.681307081465081
+          ]
+        ],
+        "median_split": {
+          "threshold": 1.750154167135032,
+          "high_n": 63,
+          "high_events": 13,
+          "low_n": 64,
+          "low_events": 5,
+          "logrank_chi2": 4.109097979345463,
+          "logrank_p": 0.04265310568211382
+        },
+        "split_2_5": {
+          "threshold": 2.5,
+          "high_n": 21,
+          "high_events": 8,
+          "low_n": 106,
+          "low_events": 10,
+          "logrank_chi2": 12.12357386595838,
+          "logrank_p": 0.0004978839294288574
+        }
+      },
+      "hg_frac_by_isup": {
+        "1": [
+          0.01195158850226929,
+          111
+        ],
+        "2": [
+          0.04673645320197044,
+          129
+        ],
+        "3": [
+          0.3361461061544556,
+          44
+        ],
+        "4": [
+          0.5386116600190141,
+          16
+        ]
+      },
+      "hg_frac_vs_ai_spearman": 0.7610586784297603,
+      "hg_frac_low_grade": {
+        "n": 237,
+        "events": 32,
+        "c_hg_frac": 0.7719024666855685,
+        "cox_hg_frac_per_sd": [
+          [
+            1.6149683026791248,
+            1.346857853568861,
+            1.9364497981337623,
+            2.280216345927714e-07
+          ]
+        ],
+        "median_split": {
+          "threshold": 0.02210118774197782,
+          "high_n": 118,
+          "high_events": 27,
+          "low_n": 119,
+          "low_events": 5,
+          "logrank_chi2": 18.038570772568878,
+          "logrank_p": 2.1647430354574132e-05
+        },
+        "c_top_attn_egrade": 0.7238446271618939
+      },
+      "hg_frac_isup2": {
+        "n": 127,
+        "events": 18,
+        "c_hg_frac": 0.7814569536423841,
+        "cox_hg_frac_per_sd": [
+          [
+            1.7386599256782356,
+            1.325621513563709,
+            2.2803932391175437,
+            6.4164823321006e-05
+          ]
+        ],
+        "median_split": {
+          "threshold": 0.04599074074074074,
+          "high_n": 63,
+          "high_events": 15,
+          "low_n": 64,
+          "low_events": 3,
+          "logrank_chi2": 9.498749783932725,
+          "logrank_p": 0.002056119480888935
+        },
+        "c_top_attn_egrade": 0.674550614947966
+      },
+      "nuclear": {
+        "n": 71,
+        "avg_nucleus_area_m": {
+          "spearman_ai": 0.6039906103286385,
+          "spearman_isup": 0.47774191233150254,
+          "within_isup_spearman_ai": 0.41650734603074313,
+          "spearman_hg_frac": 0.5523138832997988,
+          "within_isup_spearman_hg_frac": 0.3294345555097658,
+          "within_isup_strata_used": {
+            "1": 32,
+            "2": 26,
+            "3": 12
+          }
+        },
+        "avg_nucleus_perimeter_m": {
+          "spearman_ai": 0.5943997317236753,
+          "spearman_isup": 0.4406702571625419,
+          "within_isup_spearman_ai": 0.41252205044665674,
+          "spearman_hg_frac": 0.5295103957075787,
+          "within_isup_spearman_hg_frac": 0.302055048680856,
+          "within_isup_strata_used": {
+            "1": 32,
+            "2": 26,
+            "3": 12
+          }
+        },
+        "avg_nucleus_roundness": {
+          "spearman_ai": -0.045506371562709584,
+          "spearman_isup": 0.03643686655305374,
+          "within_isup_spearman_ai": -0.047033746118283044,
+          "spearman_hg_frac": 0.016264252179745135,
+          "within_isup_spearman_hg_frac": 0.0472758708326972,
+          "within_isup_strata_used": {
+            "1": 32,
+            "2": 26,
+            "3": 12
+          }
+        },
+        "avg_cell_area_m": {
+          "spearman_ai": 0.6038564721663312,
+          "spearman_isup": 0.4707229639213324,
+          "within_isup_spearman_ai": 0.4513674586148746,
+          "spearman_hg_frac": 0.5715962441314553,
+          "within_isup_spearman_hg_frac": 0.38676737142791584,
+          "within_isup_strata_used": {
+            "1": 32,
+            "2": 26,
+            "3": 12
+          }
+        }
+      },
+      "if_biomarker": {
+        "n": 70,
+        "events": 15,
+        "spearman_ai_p21": 0.01632403114338203,
+        "c_ai": 0.5544554455445545,
+        "c_p21_low_is_risk": 0.6886688668866887,
+        "cox_ai_plus_logp21": [
+          [
+            1.0619598415078164,
+            0.5117320441249289,
+            2.2038070859990695,
+            0.8717845873280017
+          ],
+          [
+            0.5428477554435746,
+            0.3596925167019625,
+            0.8192655446159832,
+            0.003622169186148708
+          ]
+        ],
+        "ai_threshold": 1.7197284915889783,
+        "ai_threshold_from": "median AI grade of the cohort survival set (PROTOCOL 2.4)",
+        "groups": {
+          "ai_low_p21_high": {
+            "n": 23,
+            "events": 2
+          },
+          "ai_low_p21_low": {
+            "n": 5,
+            "events": 1
+          },
+          "ai_high_p21_high": {
+            "n": 30,
+            "events": 6
+          },
+          "ai_high_p21_low": {
+            "n": 12,
+            "events": 6
+          }
+        },
+        "ai_high_and_p21_low_vs_rest": {
+          "chi2": 8.48039079389746,
+          "p": 0.003589949759813315
+        }
+      }
+    },
+    "scotland": {
+      "isup2": {
+        "n": 50,
+        "events": 11,
+        "c_ai": 0.5612244897959183,
+        "cox_ai": [
+          [
+            2.0365180283565416,
+            0.3727164040961379,
+            11.127510445586504,
+            0.4117038237654156
+          ]
+        ],
+        "cox_leibovich_ai": [
+          [
+            1.7000452987821044,
+            1.1058775575629125,
+            2.613448476412106,
+            0.015575621667628482
+          ],
+          [
+            0.3352774849995987,
+            0.03338909127038162,
+            3.3666981541175476,
+            0.3531294863225951
+          ]
+        ],
+        "median_split": {
+          "threshold": 2.143036160189148,
+          "high_n": 25,
+          "high_events": 7,
+          "low_n": 25,
+          "low_events": 4,
+          "logrank_chi2": 0.7271233362111975,
+          "logrank_p": 0.3938172193162592
+        },
+        "split_2_5": {
+          "threshold": 2.5,
+          "high_n": 11,
+          "high_events": 2,
+          "low_n": 39,
+          "low_events": 9,
+          "logrank_chi2": 0.2503103534826928,
+          "logrank_p": 0.6168566327781286
+        }
+      },
+      "hg_frac_by_isup": {
+        "1": [
+          0.026735866110340463,
+          36
+        ],
+        "2": [
+          0.10346225286520372,
+          50
+        ],
+        "3": [
+          0.31326583653631945,
+          32
+        ],
+        "4": [
+          0.36265475638280703,
+          2
+        ]
+      },
+      "hg_frac_vs_ai_spearman": 0.9030071532745327,
+      "hg_frac_low_grade": {
+        "n": 86,
+        "events": 14,
+        "c_hg_frac": 0.6480263157894737,
+        "cox_hg_frac_per_sd": [
+          [
+            1.2679673916379464,
+            0.8279587827027515,
+            1.9418132156396706,
+            0.2749201712898479
+          ]
+        ],
+        "median_split": {
+          "threshold": 0.07153445310636883,
+          "high_n": 43,
+          "high_events": 10,
+          "low_n": 43,
+          "low_events": 4,
+          "logrank_chi2": 2.9372581328510665,
+          "logrank_p": 0.08655754747831652
+        },
+        "c_top_attn_egrade": 0.7072368421052632
+      },
+      "hg_frac_isup2": {
+        "n": 50,
+        "events": 11,
+        "c_hg_frac": 0.5178571428571429,
+        "cox_hg_frac_per_sd": [
+          [
+            0.9397729861595043,
+            0.5265309432739688,
+            1.677343519496844,
+            0.8335460667450006
+          ]
+        ],
+        "median_split": {
+          "threshold": 0.10346225286520372,
+          "high_n": 25,
+          "high_events": 7,
+          "low_n": 25,
+          "low_events": 4,
+          "logrank_chi2": 0.5734348263262103,
+          "logrank_p": 0.4488972271291485
+        },
+        "c_top_attn_egrade": 0.5637755102040817
+      },
+      "nuclear": {
+        "n": 88,
+        "avg_nucleus_area_m": {
+          "spearman_ai": 0.4209080342362017,
+          "spearman_isup": 0.45453877992399855,
+          "within_isup_spearman_ai": 0.21237124437327023,
+          "spearman_hg_frac": 0.40680145116410144,
+          "within_isup_spearman_hg_frac": 0.18490980355061096,
+          "within_isup_strata_used": {
+            "1": 29,
+            "2": 39,
+            "3": 19
+          }
+        },
+        "avg_nucleus_perimeter_m": {
+          "spearman_ai": 0.3861611073931881,
+          "spearman_isup": 0.43309309752608655,
+          "within_isup_spearman_ai": 0.1965710655845968,
+          "spearman_hg_frac": 0.373798034588426,
+          "within_isup_spearman_hg_frac": 0.16711480407888257,
+          "within_isup_strata_used": {
+            "1": 29,
+            "2": 39,
+            "3": 19
+          }
+        },
+        "avg_nucleus_roundness": {
+          "spearman_ai": -0.035856433376774334,
+          "spearman_isup": -0.02328010143900321,
+          "within_isup_spearman_ai": -0.07591600632614758,
+          "spearman_hg_frac": -0.002588848578774964,
+          "within_isup_spearman_hg_frac": 0.02691834452098945,
+          "within_isup_strata_used": {
+            "1": 29,
+            "2": 39,
+            "3": 19
+          }
+        },
+        "avg_cell_area_m": {
+          "spearman_ai": 0.4758726356944103,
+          "spearman_isup": 0.46772012086874687,
+          "within_isup_spearman_ai": 0.2766870831000655,
+          "spearman_hg_frac": 0.47411151421225045,
+          "within_isup_spearman_hg_frac": 0.2603038860124377,
+          "within_isup_strata_used": {
+            "1": 29,
+            "2": 39,
+            "3": 19
+          }
+        }
+      },
+      "if_biomarker": {
+        "n": 88,
+        "events": 19,
+        "spearman_ai_p21": -0.008981719559015182,
+        "c_ai": 0.708204334365325,
+        "c_p21_low_is_risk": 0.5688854489164087,
+        "cox_ai_plus_logp21": [
+          [
+            6.359146295101923,
+            1.9171705241749877,
+            21.092928924468232,
+            0.00249536022602575
+          ],
+          [
+            0.8747803823633798,
+            0.6611598451509373,
+            1.1574216477002213,
+            0.3489884999247195
+          ]
+        ],
+        "ai_threshold": 2.1714169687384723,
+        "ai_threshold_from": "median AI grade of the cohort survival set (PROTOCOL 2.4)",
+        "groups": {
+          "ai_low_p21_high": {
+            "n": 25,
+            "events": 1
+          },
+          "ai_low_p21_low": {
+            "n": 19,
+            "events": 5
+          },
+          "ai_high_p21_high": {
+            "n": 24,
+            "events": 5
+          },
+          "ai_high_p21_low": {
+            "n": 20,
+            "events": 8
+          }
+        },
+        "ai_high_and_p21_low_vs_rest": {
+          "chi2": 4.58310615278685,
+          "p": 0.03228863409383033
+        }
+      }
+    }
+  },
+  "cox_warnings": [],
+  "finished": "2026-10-23T11:17:19+08:00",
+  "gx1_code_signature": "83e88873fb8d1e02ad2fee6be127f48bbf45b0cf4b64036584f61b2eea8670c3",
+  "figures": [
+    "explain_summary.png"
+  ]
+}

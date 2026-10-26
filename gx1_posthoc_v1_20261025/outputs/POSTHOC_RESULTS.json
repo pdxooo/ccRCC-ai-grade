@@ -1,0 +1,139 @@
+{
+ "plan": "PLAN.md",
+ "lock_sha256": "4b1f1be405dcf17132fb9f52fdc4ecd7a0ddb5130954c291a288572bef0ddef8",
+ "locked_at": "2026-10-25T22:20:01+08:00",
+ "encoder": "phikon-v2",
+ "n": {
+  "korea": 295,
+  "korea_events": 48,
+  "scotland": 120,
+  "scotland_events": 27
+ },
+ "A_incremental_discrimination": {
+  "categorical": {
+   "scotland_frozen_korean_models": {
+    "c_isup": 0.6774129746835443,
+    "c_isup_plus_ai": 0.6230221518987342,
+    "delta_c": -0.05439082278481011,
+    "delta_c_ci95": [
+     -0.22320774748582733,
+     0.11217527648528851
+    ],
+    "korean_coefficients_isup": [
+     0.12108971954014297,
+     0.9026184596191736
+    ],
+    "korean_coefficients_isup_plus_ai": [
+     -0.677403096007723,
+     -1.1607287946253924,
+     1.4518906266750022
+    ]
+   },
+   "korea_cross_fitted": {
+    "c_isup": 0.5510867043081444,
+    "c_isup_plus_ai": 0.7270477221749555,
+    "delta_c": 0.17596101786681106,
+    "delta_c_ci95": [
+     0.07440107745843791,
+     0.28149668852338405
+    ]
+   }
+  },
+  "numeric": {
+   "scotland_frozen_korean_models": {
+    "c_isup": 0.6859177215189873,
+    "c_isup_plus_ai": 0.6305379746835443,
+    "delta_c": -0.055379746835443,
+    "delta_c_ci95": [
+     -0.2233411907726976,
+     0.106486809302393
+    ],
+    "korean_coefficients_isup": [
+     0.42727146063894883
+    ],
+    "korean_coefficients_isup_plus_ai": [
+     -0.45480816117800454,
+     1.4357520749233197
+    ]
+   },
+   "korea_cross_fitted": {
+    "c_isup": 0.5944388583803851,
+    "c_isup_plus_ai": 0.7354783819320907,
+    "delta_c": 0.14103952355170557,
+    "delta_c_ci95": [
+     0.046214755758303035,
+     0.23639067215114964
+    ]
+   }
+  }
+ },
+ "B_categorical_isup_adjustment": {
+  "korea": {
+   "categorical": {
+    "hr_ai": 4.27118209717955,
+    "hr_ai_ci95": [
+     2.6119765043831142,
+     6.984364704909801
+    ],
+    "p": 7.186728422595704e-09,
+    "lr_test_p": 1.8309609291291194e-08,
+    "hr_isup2": 0.5079343378251225,
+    "hr_isup34": 0.313257797071399
+   },
+   "numeric": {
+    "hr_ai": 4.202804644478333,
+    "hr_ai_ci95": [
+     2.5700390927863954,
+     6.872878676914636
+    ],
+    "p": 1.0550781251903038e-08,
+    "lr_test_p": 2.6232278947287107e-08
+   }
+  },
+  "scotland": {
+   "categorical": {
+    "hr_ai": 3.832648065178257,
+    "hr_ai_ci95": [
+     1.2601640779255303,
+     11.656570321934458
+    ],
+    "p": 0.017910189825988933,
+    "lr_test_p": 0.017370573832116428,
+    "hr_isup2": 1.8556571399520818,
+    "hr_isup34": 2.5483340255230074
+   },
+   "numeric": {
+    "hr_ai": 3.264447747053129,
+    "hr_ai_ci95": [
+     1.059015003921499,
+     10.062764978568884
+    ],
+    "p": 0.03941469864744484,
+    "lr_test_p": 0.039488200684675914
+   }
+  }
+ },
+ "C_low_grade_korean_threshold": {
+  "korean_threshold": 1.5788693933935412,
+  "scotland_n": 86,
+  "scotland_events": 14,
+  "above": {
+   "n": 72,
+   "events": 14
+  },
+  "at_or_below": {
+   "n": 14,
+   "events": 0
+  },
+  "logrank_chi2": 2.400801587954716,
+  "logrank_p": 0.12127309494430892,
+  "for_comparison_scottish_median": {
+   "threshold": 2.0246945613182,
+   "above_n": 43,
+   "above_events": 12,
+   "logrank_p": 0.007480680890648176
+  }
+ },
+ "cox_warnings": [],
+ "finished": "2026-10-25T22:20:21+08:00"
+}

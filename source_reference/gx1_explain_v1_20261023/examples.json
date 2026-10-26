@@ -1,0 +1,46 @@
+{
+  "korea": [
+    {
+      "case": "korea:KR24",
+      "role": "A: recurrence, highest AI grade",
+      "isup": 2,
+      "ai_grade": 3.329866307823941,
+      "time": 27.1,
+      "event": 1,
+      "hg_frac": 0.7948863925176638,
+      "patches": 19673
+    },
+    {
+      "case": "korea:KR249",
+      "role": "B: no recurrence >= 36 mo, lowest AI grade",
+      "isup": 1,
+      "ai_grade": 1.1661526583137531,
+      "time": 84.0,
+      "event": 0,
+      "hg_frac": 0.004113441931325442,
+      "patches": 17066
+    }
+  ],
+  "scotland": [
+    {
+      "case": "scotland:1050",
+      "role": "A: recurrence, highest AI grade",
+      "isup": 2,
+      "ai_grade": 2.605197486053176,
+      "time": 31.93333333,
+      "event": 1,
+      "hg_frac": 0.2899470459973004,
+      "patches": 19262
+    },
+    {
+      "case": "scotland:994",
+      "role": "B: no recurrence >= 36 mo, lowest AI grade",
+      "isup": 1,
+      "ai_grade": 1.4252290950884965,
+      "time": 43.76666667,
+      "event": 0,
+      "hg_frac": 0.0072743906423577065,
+      "patches": 15303
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "fusion_gain_v2_20261021",
+  "target": "patient_level_ISUP_1_to_4",
+  "members": ["phikon-v2", "uni", "gigapath", "uni2-h"],
+  "member_rule": "Top-4 encoders by first-round mean VALIDATION macro-F1 (test folds not used for selection)",
+  "reference_single": "phikon-v2",
+  "seeds": [0, 1, 2, 3],
+  "seed_base": 20261021,
+  "arms": {
+    "single:phikon-v2": {"members": ["phikon-v2"], "fusion": "none"},
+    "single:uni": {"members": ["uni"], "fusion": "none"},
+    "single:gigapath": {"members": ["gigapath"], "fusion": "none"},
+    "single:uni2-h": {"members": ["uni2-h"], "fusion": "none"},
+    "mdrop4": {"members": ["phikon-v2", "uni", "gigapath", "uni2-h"], "fusion": "modality_dropout_mean", "branch_dim": 128, "branch_drop": 0.25}
+  },
+  "normalization": "per_patch_per_encoder_l2",
+  "hidden": 256,
+  "attention_hidden": 128,
+  "dropout": 0.25,
+  "train_patches": 2048,
+  "eval_chunk": 4096,
+  "max_epochs": 100,
+  "min_epochs": 30,
+  "patience": 20,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "accumulate_patients": 4,
+  "gradient_clip": 5.0,
+  "selection": "validation_unweighted_cross_entropy",
+  "class_weight": "training_n_over_4_times_class_count",
+  "evaluation": "all_primary_patches_exact_global_attention",
+  "device": "cuda",
+  "platform": "lab-a6000 RTX A6000, torch 2.6.0+cu124",
+  "primary_endpoint": "pooled OOF AUC, high (ISUP 3-4) vs low (ISUP 1-2), score = P(G3)+P(G4)",
+  "secondary_endpoints": ["pooled OOF quadratic weighted kappa (4-class)", "pooled OOF macro-F1 (4-class)"],
+  "preregistered_comparisons": {
+    "P1_encoder_vs_seed_diversity": "late fusion of 4 encoders (seed 0, 4 models) vs Phikon-v2 seeds 0-3 (4 models)",
+    "P2_full_late_fusion": "late fusion of 4 encoders x 4 seeds (16 models) vs Phikon-v2 seeds 0-3",
+    "P3_learned_fusion": "mdrop4 seeds 0-3 averaged vs Phikon-v2 seeds 0-3 averaged"
+  },
+  "external_policy": "Scotland excluded from training and selection; used later only to confirm locked comparisons",
+  "development_policy": "Exploratory: Korean OOF test folds were inspected in earlier rounds"
+}

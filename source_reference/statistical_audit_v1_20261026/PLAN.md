@@ -1,0 +1,15 @@
+# Post hoc statistical reporting audit, 26 October 2026
+
+This is a manuscript-revision analysis after all previous results were known, not a pre-registered or original confirmatory analysis. Existing labels, predictions, study selection and trained models remain unchanged. This plan is written before computing the new diagnostics; that does not remove the post hoc status.
+
+Use grading_predictions.csv and recurrence_he_risk.csv exported in gx1_posthoc_v1_20261025/outputs. Retain the original 84-month censoring and exclude zero-time Korean records only from survival analyses.
+
+1. Refit Cox models with R survival::coxph, ties="breslow", matching the existing likelihood. For every encoder/cohort fit AI grade plus numeric ISUP and AI grade plus Fuhrman-version Leibovich (36 fits). In addition fit Phikon-v2 plus categorical ISUP (grade 1 / grade 2 / grades 3-4) in both cohorts, and each of the two direct-H&E encoders plus Leibovich in both cohorts (4 fits). Total 42 fits. Diagnostic refitting in Scotland is assumption checking, not a replacement of the frozen Korean external predictions. Compare selected fitted HRs to archived values.
+
+2. Test PH with survival::cox.zph, Kaplan-Meier time transformation (main diagnostic) and rank time transformation (sensitivity). Report every covariate/term and the global tests. No significant test is omitted. Plot scaled Schoenfeld residuals for the 10 core fits (Phikon-v2 numeric ISUP, categorical ISUP, Leibovich; direct-H&E Phikon-v2/UNI plus Leibovich, each in both cohorts). Nominal P<0.05 is a diagnostic flag, not a claim that every model passes if P>=0.05. Small external event counts limit power. These checks do not cover every exploratory subgroup/biomarker Cox model.
+
+3. If a core fit has a global or covariate KM diagnostic P<0.05, fit a diagnostic time-interaction sensitivity using the corresponding covariate(s) times log(t/12), evaluated at each event risk set with coxph tt(). Report sensitivity results without replacing the locked primary HR or refitting the image model. Do not substitute a covariate multiplied by each subject's final follow-up time.
+
+4. For the nine-encoder AI-grade association screen adjusted for numeric ISUP, collect the original two-sided Wald P values (recomputed with the same Breslow likelihood) and report Holm-adjusted P values within each cohort (nine hypotheses per family). Both raw and adjusted values will be reported. This family and adjustment are added post hoc; they do not reclassify previous protocol decision rules. Other secondary/exploratory P values and existing confidence intervals remain nominal and are explicitly labelled as such; no study-wide multiplicity control is claimed. Encoder AUC comparisons remain descriptive point-estimate comparisons, not new significance tests.
+
+5. Preserve every existing result table and model input. Add a separate supplementary note and tables for the new diagnostics/multiplicity sensitivity. If assumptions or adjusted P values weaken an interpretation, amend the relevant prose and clearly document before/after text. No new experiments or retraining.

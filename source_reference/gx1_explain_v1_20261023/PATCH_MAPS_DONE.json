@@ -1,0 +1,6 @@
+{
+  "encoder": "phikon-v2",
+  "cases": 420,
+  "worst_reconstruction_error": 1.0423100993417478e-07,
+  "finished": "2026-10-23T11:11:56+08:00"
+}

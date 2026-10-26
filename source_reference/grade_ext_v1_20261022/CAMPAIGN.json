@@ -1,0 +1,4309 @@
+{
+ "name": "gx1",
+ "title": "ISUP grading external validation and AI grade score (Korea development, Scotland external)",
+ "version": "grade_ext_v1_20261022",
+ "signature_files": [
+  "common.py",
+  "train.py",
+  "check.py",
+  "evaluate.py",
+  "config.json",
+  "inputs/korea_surv.csv",
+  "inputs/scotland_surv.csv"
+ ],
+ "lock_file": "LOCK.json",
+ "check": {
+  "argv": [
+   "check.py",
+   "--device",
+   "cuda",
+   "--threads",
+   "4"
+  ],
+  "pass_file": "CHECK_PASS.json"
+ },
+ "runs": [
+  {
+   "id": "phikon-v2:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed0/fold0/complete.json"
+  },
+  {
+   "id": "phikon-v2:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed0/fold1/complete.json"
+  },
+  {
+   "id": "phikon-v2:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed0/fold2/complete.json"
+  },
+  {
+   "id": "phikon-v2:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed0/fold3/complete.json"
+  },
+  {
+   "id": "phikon-v2:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed0/fold4/complete.json"
+  },
+  {
+   "id": "phikon-v2:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed1/fold0/complete.json"
+  },
+  {
+   "id": "phikon-v2:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed1/fold1/complete.json"
+  },
+  {
+   "id": "phikon-v2:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed1/fold2/complete.json"
+  },
+  {
+   "id": "phikon-v2:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed1/fold3/complete.json"
+  },
+  {
+   "id": "phikon-v2:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed1/fold4/complete.json"
+  },
+  {
+   "id": "phikon-v2:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed2/fold0/complete.json"
+  },
+  {
+   "id": "phikon-v2:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed2/fold1/complete.json"
+  },
+  {
+   "id": "phikon-v2:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed2/fold2/complete.json"
+  },
+  {
+   "id": "phikon-v2:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed2/fold3/complete.json"
+  },
+  {
+   "id": "phikon-v2:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed2/fold4/complete.json"
+  },
+  {
+   "id": "phikon-v2:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed3/fold0/complete.json"
+  },
+  {
+   "id": "phikon-v2:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed3/fold1/complete.json"
+  },
+  {
+   "id": "phikon-v2:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed3/fold2/complete.json"
+  },
+  {
+   "id": "phikon-v2:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed3/fold3/complete.json"
+  },
+  {
+   "id": "phikon-v2:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed3/fold4/complete.json"
+  },
+  {
+   "id": "phikon-v2:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed4/fold0/complete.json"
+  },
+  {
+   "id": "phikon-v2:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed4/fold1/complete.json"
+  },
+  {
+   "id": "phikon-v2:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed4/fold2/complete.json"
+  },
+  {
+   "id": "phikon-v2:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed4/fold3/complete.json"
+  },
+  {
+   "id": "phikon-v2:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "phikon-v2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/phikon-v2/seed4/fold4/complete.json"
+  },
+  {
+   "id": "uni:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed0/fold0/complete.json"
+  },
+  {
+   "id": "uni:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed0/fold1/complete.json"
+  },
+  {
+   "id": "uni:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed0/fold2/complete.json"
+  },
+  {
+   "id": "uni:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed0/fold3/complete.json"
+  },
+  {
+   "id": "uni:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed0/fold4/complete.json"
+  },
+  {
+   "id": "uni:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed1/fold0/complete.json"
+  },
+  {
+   "id": "uni:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed1/fold1/complete.json"
+  },
+  {
+   "id": "uni:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed1/fold2/complete.json"
+  },
+  {
+   "id": "uni:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed1/fold3/complete.json"
+  },
+  {
+   "id": "uni:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed1/fold4/complete.json"
+  },
+  {
+   "id": "uni:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed2/fold0/complete.json"
+  },
+  {
+   "id": "uni:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed2/fold1/complete.json"
+  },
+  {
+   "id": "uni:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed2/fold2/complete.json"
+  },
+  {
+   "id": "uni:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed2/fold3/complete.json"
+  },
+  {
+   "id": "uni:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed2/fold4/complete.json"
+  },
+  {
+   "id": "uni:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed3/fold0/complete.json"
+  },
+  {
+   "id": "uni:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed3/fold1/complete.json"
+  },
+  {
+   "id": "uni:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed3/fold2/complete.json"
+  },
+  {
+   "id": "uni:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed3/fold3/complete.json"
+  },
+  {
+   "id": "uni:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed3/fold4/complete.json"
+  },
+  {
+   "id": "uni:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed4/fold0/complete.json"
+  },
+  {
+   "id": "uni:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed4/fold1/complete.json"
+  },
+  {
+   "id": "uni:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed4/fold2/complete.json"
+  },
+  {
+   "id": "uni:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed4/fold3/complete.json"
+  },
+  {
+   "id": "uni:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni/seed4/fold4/complete.json"
+  },
+  {
+   "id": "uni2-h:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed0/fold0/complete.json"
+  },
+  {
+   "id": "uni2-h:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed0/fold1/complete.json"
+  },
+  {
+   "id": "uni2-h:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed0/fold2/complete.json"
+  },
+  {
+   "id": "uni2-h:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed0/fold3/complete.json"
+  },
+  {
+   "id": "uni2-h:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed0/fold4/complete.json"
+  },
+  {
+   "id": "uni2-h:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed1/fold0/complete.json"
+  },
+  {
+   "id": "uni2-h:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed1/fold1/complete.json"
+  },
+  {
+   "id": "uni2-h:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed1/fold2/complete.json"
+  },
+  {
+   "id": "uni2-h:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed1/fold3/complete.json"
+  },
+  {
+   "id": "uni2-h:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed1/fold4/complete.json"
+  },
+  {
+   "id": "uni2-h:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed2/fold0/complete.json"
+  },
+  {
+   "id": "uni2-h:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed2/fold1/complete.json"
+  },
+  {
+   "id": "uni2-h:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed2/fold2/complete.json"
+  },
+  {
+   "id": "uni2-h:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed2/fold3/complete.json"
+  },
+  {
+   "id": "uni2-h:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed2/fold4/complete.json"
+  },
+  {
+   "id": "uni2-h:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed3/fold0/complete.json"
+  },
+  {
+   "id": "uni2-h:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed3/fold1/complete.json"
+  },
+  {
+   "id": "uni2-h:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed3/fold2/complete.json"
+  },
+  {
+   "id": "uni2-h:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed3/fold3/complete.json"
+  },
+  {
+   "id": "uni2-h:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed3/fold4/complete.json"
+  },
+  {
+   "id": "uni2-h:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed4/fold0/complete.json"
+  },
+  {
+   "id": "uni2-h:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed4/fold1/complete.json"
+  },
+  {
+   "id": "uni2-h:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed4/fold2/complete.json"
+  },
+  {
+   "id": "uni2-h:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed4/fold3/complete.json"
+  },
+  {
+   "id": "uni2-h:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "uni2-h",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/uni2-h/seed4/fold4/complete.json"
+  },
+  {
+   "id": "virchow2:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed0/fold0/complete.json"
+  },
+  {
+   "id": "virchow2:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed0/fold1/complete.json"
+  },
+  {
+   "id": "virchow2:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed0/fold2/complete.json"
+  },
+  {
+   "id": "virchow2:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed0/fold3/complete.json"
+  },
+  {
+   "id": "virchow2:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed0/fold4/complete.json"
+  },
+  {
+   "id": "virchow2:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed1/fold0/complete.json"
+  },
+  {
+   "id": "virchow2:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed1/fold1/complete.json"
+  },
+  {
+   "id": "virchow2:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed1/fold2/complete.json"
+  },
+  {
+   "id": "virchow2:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed1/fold3/complete.json"
+  },
+  {
+   "id": "virchow2:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed1/fold4/complete.json"
+  },
+  {
+   "id": "virchow2:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed2/fold0/complete.json"
+  },
+  {
+   "id": "virchow2:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed2/fold1/complete.json"
+  },
+  {
+   "id": "virchow2:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed2/fold2/complete.json"
+  },
+  {
+   "id": "virchow2:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed2/fold3/complete.json"
+  },
+  {
+   "id": "virchow2:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed2/fold4/complete.json"
+  },
+  {
+   "id": "virchow2:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed3/fold0/complete.json"
+  },
+  {
+   "id": "virchow2:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed3/fold1/complete.json"
+  },
+  {
+   "id": "virchow2:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed3/fold2/complete.json"
+  },
+  {
+   "id": "virchow2:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed3/fold3/complete.json"
+  },
+  {
+   "id": "virchow2:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed3/fold4/complete.json"
+  },
+  {
+   "id": "virchow2:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed4/fold0/complete.json"
+  },
+  {
+   "id": "virchow2:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed4/fold1/complete.json"
+  },
+  {
+   "id": "virchow2:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed4/fold2/complete.json"
+  },
+  {
+   "id": "virchow2:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed4/fold3/complete.json"
+  },
+  {
+   "id": "virchow2:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "virchow2",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/virchow2/seed4/fold4/complete.json"
+  },
+  {
+   "id": "gigapath:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed0/fold0/complete.json"
+  },
+  {
+   "id": "gigapath:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed0/fold1/complete.json"
+  },
+  {
+   "id": "gigapath:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed0/fold2/complete.json"
+  },
+  {
+   "id": "gigapath:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed0/fold3/complete.json"
+  },
+  {
+   "id": "gigapath:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed0/fold4/complete.json"
+  },
+  {
+   "id": "gigapath:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed1/fold0/complete.json"
+  },
+  {
+   "id": "gigapath:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed1/fold1/complete.json"
+  },
+  {
+   "id": "gigapath:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed1/fold2/complete.json"
+  },
+  {
+   "id": "gigapath:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed1/fold3/complete.json"
+  },
+  {
+   "id": "gigapath:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed1/fold4/complete.json"
+  },
+  {
+   "id": "gigapath:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed2/fold0/complete.json"
+  },
+  {
+   "id": "gigapath:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed2/fold1/complete.json"
+  },
+  {
+   "id": "gigapath:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed2/fold2/complete.json"
+  },
+  {
+   "id": "gigapath:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed2/fold3/complete.json"
+  },
+  {
+   "id": "gigapath:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed2/fold4/complete.json"
+  },
+  {
+   "id": "gigapath:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed3/fold0/complete.json"
+  },
+  {
+   "id": "gigapath:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed3/fold1/complete.json"
+  },
+  {
+   "id": "gigapath:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed3/fold2/complete.json"
+  },
+  {
+   "id": "gigapath:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed3/fold3/complete.json"
+  },
+  {
+   "id": "gigapath:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed3/fold4/complete.json"
+  },
+  {
+   "id": "gigapath:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed4/fold0/complete.json"
+  },
+  {
+   "id": "gigapath:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed4/fold1/complete.json"
+  },
+  {
+   "id": "gigapath:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed4/fold2/complete.json"
+  },
+  {
+   "id": "gigapath:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed4/fold3/complete.json"
+  },
+  {
+   "id": "gigapath:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "gigapath",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/gigapath/seed4/fold4/complete.json"
+  },
+  {
+   "id": "conch:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed0/fold0/complete.json"
+  },
+  {
+   "id": "conch:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed0/fold1/complete.json"
+  },
+  {
+   "id": "conch:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed0/fold2/complete.json"
+  },
+  {
+   "id": "conch:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed0/fold3/complete.json"
+  },
+  {
+   "id": "conch:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed0/fold4/complete.json"
+  },
+  {
+   "id": "conch:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed1/fold0/complete.json"
+  },
+  {
+   "id": "conch:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed1/fold1/complete.json"
+  },
+  {
+   "id": "conch:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed1/fold2/complete.json"
+  },
+  {
+   "id": "conch:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed1/fold3/complete.json"
+  },
+  {
+   "id": "conch:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed1/fold4/complete.json"
+  },
+  {
+   "id": "conch:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed2/fold0/complete.json"
+  },
+  {
+   "id": "conch:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed2/fold1/complete.json"
+  },
+  {
+   "id": "conch:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed2/fold2/complete.json"
+  },
+  {
+   "id": "conch:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed2/fold3/complete.json"
+  },
+  {
+   "id": "conch:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed2/fold4/complete.json"
+  },
+  {
+   "id": "conch:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed3/fold0/complete.json"
+  },
+  {
+   "id": "conch:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed3/fold1/complete.json"
+  },
+  {
+   "id": "conch:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed3/fold2/complete.json"
+  },
+  {
+   "id": "conch:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed3/fold3/complete.json"
+  },
+  {
+   "id": "conch:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed3/fold4/complete.json"
+  },
+  {
+   "id": "conch:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed4/fold0/complete.json"
+  },
+  {
+   "id": "conch:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed4/fold1/complete.json"
+  },
+  {
+   "id": "conch:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed4/fold2/complete.json"
+  },
+  {
+   "id": "conch:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed4/fold3/complete.json"
+  },
+  {
+   "id": "conch:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "conch",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/conch/seed4/fold4/complete.json"
+  },
+  {
+   "id": "resnet50:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed0/fold0/complete.json"
+  },
+  {
+   "id": "resnet50:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed0/fold1/complete.json"
+  },
+  {
+   "id": "resnet50:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed0/fold2/complete.json"
+  },
+  {
+   "id": "resnet50:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed0/fold3/complete.json"
+  },
+  {
+   "id": "resnet50:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed0/fold4/complete.json"
+  },
+  {
+   "id": "resnet50:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed1/fold0/complete.json"
+  },
+  {
+   "id": "resnet50:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed1/fold1/complete.json"
+  },
+  {
+   "id": "resnet50:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed1/fold2/complete.json"
+  },
+  {
+   "id": "resnet50:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed1/fold3/complete.json"
+  },
+  {
+   "id": "resnet50:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed1/fold4/complete.json"
+  },
+  {
+   "id": "resnet50:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed2/fold0/complete.json"
+  },
+  {
+   "id": "resnet50:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed2/fold1/complete.json"
+  },
+  {
+   "id": "resnet50:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed2/fold2/complete.json"
+  },
+  {
+   "id": "resnet50:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed2/fold3/complete.json"
+  },
+  {
+   "id": "resnet50:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed2/fold4/complete.json"
+  },
+  {
+   "id": "resnet50:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed3/fold0/complete.json"
+  },
+  {
+   "id": "resnet50:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed3/fold1/complete.json"
+  },
+  {
+   "id": "resnet50:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed3/fold2/complete.json"
+  },
+  {
+   "id": "resnet50:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed3/fold3/complete.json"
+  },
+  {
+   "id": "resnet50:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed3/fold4/complete.json"
+  },
+  {
+   "id": "resnet50:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed4/fold0/complete.json"
+  },
+  {
+   "id": "resnet50:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed4/fold1/complete.json"
+  },
+  {
+   "id": "resnet50:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed4/fold2/complete.json"
+  },
+  {
+   "id": "resnet50:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed4/fold3/complete.json"
+  },
+  {
+   "id": "resnet50:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "resnet50",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/resnet50/seed4/fold4/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed0/fold0/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed0/fold1/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed0/fold2/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed0/fold3/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed0/fold4/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed1/fold0/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed1/fold1/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed1/fold2/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed1/fold3/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed1/fold4/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed2/fold0/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed2/fold1/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed2/fold2/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed2/fold3/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed2/fold4/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed3/fold0/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed3/fold1/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed3/fold2/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed3/fold3/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed3/fold4/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed4/fold0/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed4/fold1/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed4/fold2/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed4/fold3/complete.json"
+  },
+  {
+   "id": "convnext_tiny:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "convnext_tiny",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/convnext_tiny/seed4/fold4/complete.json"
+  },
+  {
+   "id": "vit_b_16:s0:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "0",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed0/fold0/complete.json"
+  },
+  {
+   "id": "vit_b_16:s0:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "0",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed0/fold1/complete.json"
+  },
+  {
+   "id": "vit_b_16:s0:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "0",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed0/fold2/complete.json"
+  },
+  {
+   "id": "vit_b_16:s0:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "0",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed0/fold3/complete.json"
+  },
+  {
+   "id": "vit_b_16:s0:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "0",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed0/fold4/complete.json"
+  },
+  {
+   "id": "vit_b_16:s1:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "1",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed1/fold0/complete.json"
+  },
+  {
+   "id": "vit_b_16:s1:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "1",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed1/fold1/complete.json"
+  },
+  {
+   "id": "vit_b_16:s1:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "1",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed1/fold2/complete.json"
+  },
+  {
+   "id": "vit_b_16:s1:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "1",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed1/fold3/complete.json"
+  },
+  {
+   "id": "vit_b_16:s1:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "1",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed1/fold4/complete.json"
+  },
+  {
+   "id": "vit_b_16:s2:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "2",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed2/fold0/complete.json"
+  },
+  {
+   "id": "vit_b_16:s2:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "2",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed2/fold1/complete.json"
+  },
+  {
+   "id": "vit_b_16:s2:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "2",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed2/fold2/complete.json"
+  },
+  {
+   "id": "vit_b_16:s2:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "2",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed2/fold3/complete.json"
+  },
+  {
+   "id": "vit_b_16:s2:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "2",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed2/fold4/complete.json"
+  },
+  {
+   "id": "vit_b_16:s3:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "3",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed3/fold0/complete.json"
+  },
+  {
+   "id": "vit_b_16:s3:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "3",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed3/fold1/complete.json"
+  },
+  {
+   "id": "vit_b_16:s3:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "3",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed3/fold2/complete.json"
+  },
+  {
+   "id": "vit_b_16:s3:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "3",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed3/fold3/complete.json"
+  },
+  {
+   "id": "vit_b_16:s3:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "3",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed3/fold4/complete.json"
+  },
+  {
+   "id": "vit_b_16:s4:f0",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "4",
+    "--fold",
+    "0",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed4/fold0/complete.json"
+  },
+  {
+   "id": "vit_b_16:s4:f1",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "4",
+    "--fold",
+    "1",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed4/fold1/complete.json"
+  },
+  {
+   "id": "vit_b_16:s4:f2",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "4",
+    "--fold",
+    "2",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed4/fold2/complete.json"
+  },
+  {
+   "id": "vit_b_16:s4:f3",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "4",
+    "--fold",
+    "3",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed4/fold3/complete.json"
+  },
+  {
+   "id": "vit_b_16:s4:f4",
+   "argv": [
+    "train.py",
+    "--encoder",
+    "vit_b_16",
+    "--seed-index",
+    "4",
+    "--fold",
+    "4",
+    "--device",
+    "cuda",
+    "--threads",
+    "4",
+    "--ram-margin-gib",
+    "64"
+   ],
+   "complete": "runs/vit_b_16/seed4/fold4/complete.json"
+  }
+ ],
+ "evaluate": {
+  "argv": [
+   "evaluate.py"
+  ],
+  "results": "RESULTS.json",
+  "report": "RESULTS.md"
+ }
+}

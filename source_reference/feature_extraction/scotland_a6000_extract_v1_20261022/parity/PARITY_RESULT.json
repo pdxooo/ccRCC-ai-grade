@@ -1,0 +1,69 @@
+{
+ "state": "PASS",
+ "threshold_min_cos": 0.999,
+ "cases": {
+  "iCAIRD -1076-HE-St Andrews-10_06_2021": {
+   "n": [
+    7291,
+    7291
+   ],
+   "coords_same": true,
+   "encoders": {
+    "resnet50": {
+     "min_cos": 0.9999996423721313,
+     "mean_cos": 1.0,
+     "max_abs": 0.00390625,
+     "identical": false
+    },
+    "convnext_tiny": {
+     "min_cos": 0.9999995827674866,
+     "mean_cos": 1.0,
+     "max_abs": 0.0048828125,
+     "identical": false
+    },
+    "vit_b_16": {
+     "min_cos": 0.9999987483024597,
+     "mean_cos": 0.9999998211860657,
+     "max_abs": 0.0048828125,
+     "identical": false
+    },
+    "uni": {
+     "min_cos": 0.9999992251396179,
+     "mean_cos": 0.9999998807907104,
+     "max_abs": 0.01123046875,
+     "identical": false
+    },
+    "uni2-h": {
+     "min_cos": 0.9999365210533142,
+     "mean_cos": 0.9999999403953552,
+     "max_abs": 0.015625,
+     "identical": false
+    },
+    "phikon-v2": {
+     "min_cos": 0.999984860420227,
+     "mean_cos": 0.9999950528144836,
+     "max_abs": 0.013916015625,
+     "identical": false
+    },
+    "conch": {
+     "min_cos": 0.9999998211860657,
+     "mean_cos": 1.0,
+     "max_abs": 0.001953125,
+     "identical": false
+    },
+    "virchow2": {
+     "min_cos": 0.9999778866767883,
+     "mean_cos": 0.9999986886978149,
+     "max_abs": 0.21875,
+     "identical": false
+    },
+    "gigapath": {
+     "min_cos": 0.9996477365493774,
+     "mean_cos": 0.9999945163726807,
+     "max_abs": 0.083740234375,
+     "identical": false
+    }
+   }
+  }
+ }
+}

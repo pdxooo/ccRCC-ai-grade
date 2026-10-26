@@ -1,0 +1,185 @@
+{
+  "36_breslow_coefficient_comparisons": [
+    {
+      "id": "korea__conch__AI_ISUP_numeric",
+      "hr_abs_error": 3.2159778751150725e-07,
+      "p_abs_error": 4.531430210158694e-20
+    },
+    {
+      "id": "korea__conch__AI_Leibovich",
+      "hr_abs_error": 1.570668848316359e-07,
+      "p_abs_error": 5.6331747988469516e-08
+    },
+    {
+      "id": "korea__convnext_tiny__AI_ISUP_numeric",
+      "hr_abs_error": 7.986315573305092e-07,
+      "p_abs_error": 3.474794044633015e-13
+    },
+    {
+      "id": "korea__convnext_tiny__AI_Leibovich",
+      "hr_abs_error": 3.7539513852991035e-07,
+      "p_abs_error": 1.8373151443318303e-07
+    },
+    {
+      "id": "korea__gigapath__AI_ISUP_numeric",
+      "hr_abs_error": 8.041023686899962e-07,
+      "p_abs_error": 1.1157617715783273e-14
+    },
+    {
+      "id": "korea__gigapath__AI_Leibovich",
+      "hr_abs_error": 5.791155732737252e-08,
+      "p_abs_error": 1.353593472863679e-07
+    },
+    {
+      "id": "korea__phikon-v2__AI_ISUP_numeric",
+      "hr_abs_error": 1.8324187678331327e-07,
+      "p_abs_error": 2.23686252615733e-14
+    },
+    {
+      "id": "korea__phikon-v2__AI_Leibovich",
+      "hr_abs_error": 1.1609830918857256e-07,
+      "p_abs_error": 2.058421381123665e-07
+    },
+    {
+      "id": "korea__resnet50__AI_ISUP_numeric",
+      "hr_abs_error": 1.3875332811608132e-06,
+      "p_abs_error": 2.654307476800266e-14
+    },
+    {
+      "id": "korea__resnet50__AI_Leibovich",
+      "hr_abs_error": 3.6485886689696656e-07,
+      "p_abs_error": 7.366557223248416e-08
+    },
+    {
+      "id": "korea__uni__AI_ISUP_numeric",
+      "hr_abs_error": 8.439939946924824e-07,
+      "p_abs_error": 6.895592161856019e-15
+    },
+    {
+      "id": "korea__uni__AI_Leibovich",
+      "hr_abs_error": 3.213848853711454e-08,
+      "p_abs_error": 4.908272821513293e-08
+    },
+    {
+      "id": "korea__uni2-h__AI_ISUP_numeric",
+      "hr_abs_error": 8.347848590162243e-07,
+      "p_abs_error": 8.24526002197346e-14
+    },
+    {
+      "id": "korea__uni2-h__AI_Leibovich",
+      "hr_abs_error": 6.76933591403639e-08,
+      "p_abs_error": 1.47003443251581e-07
+    },
+    {
+      "id": "korea__virchow2__AI_ISUP_numeric",
+      "hr_abs_error": 6.393227005574431e-07,
+      "p_abs_error": 2.6171880136604146e-15
+    },
+    {
+      "id": "korea__virchow2__AI_Leibovich",
+      "hr_abs_error": 3.4537501081288724e-08,
+      "p_abs_error": 8.405154716673024e-08
+    },
+    {
+      "id": "korea__vit_b_16__AI_ISUP_numeric",
+      "hr_abs_error": 8.055156541786346e-10,
+      "p_abs_error": 1.216063182692744e-13
+    },
+    {
+      "id": "korea__vit_b_16__AI_Leibovich",
+      "hr_abs_error": 2.850560676392888e-08,
+      "p_abs_error": 1.4681713067510316e-09
+    },
+    {
+      "id": "scotland__conch__AI_ISUP_numeric",
+      "hr_abs_error": 1.0589529466642489e-06,
+      "p_abs_error": 5.636431715105991e-11
+    },
+    {
+      "id": "scotland__conch__AI_Leibovich",
+      "hr_abs_error": 4.6129076869405594e-07,
+      "p_abs_error": 3.7439141412076715e-08
+    },
+    {
+      "id": "scotland__convnext_tiny__AI_ISUP_numeric",
+      "hr_abs_error": 1.8083431125859306e-06,
+      "p_abs_error": 3.4369659770994154e-08
+    },
+    {
+      "id": "scotland__convnext_tiny__AI_Leibovich",
+      "hr_abs_error": 1.7585099487682498e-07,
+      "p_abs_error": 1.1583436720918883e-07
+    },
+    {
+      "id": "scotland__gigapath__AI_ISUP_numeric",
+      "hr_abs_error": 3.9762582382252276e-07,
+      "p_abs_error": 2.6860199661693507e-08
+    },
+    {
+      "id": "scotland__gigapath__AI_Leibovich",
+      "hr_abs_error": 1.4370587608780738e-07,
+      "p_abs_error": 2.2297928414793944e-07
+    },
+    {
+      "id": "scotland__phikon-v2__AI_ISUP_numeric",
+      "hr_abs_error": 1.9431756013155166e-06,
+      "p_abs_error": 9.545266654170659e-08
+    },
+    {
+      "id": "scotland__phikon-v2__AI_Leibovich",
+      "hr_abs_error": 8.164869487181647e-07,
+      "p_abs_error": 7.576856062563309e-07
+    },
+    {
+      "id": "scotland__resnet50__AI_ISUP_numeric",
+      "hr_abs_error": 2.3982609739903182e-05,
+      "p_abs_error": 9.181701633373396e-09
+    },
+    {
+      "id": "scotland__resnet50__AI_Leibovich",
+      "hr_abs_error": 1.0603549975840565e-06,
+      "p_abs_error": 3.2883941808448114e-07
+    },
+    {
+      "id": "scotland__uni__AI_ISUP_numeric",
+      "hr_abs_error": 1.2225755550154815e-06,
+      "p_abs_error": 9.816481486013551e-08
+    },
+    {
+      "id": "scotland__uni__AI_Leibovich",
+      "hr_abs_error": 3.7812804043468873e-07,
+      "p_abs_error": 4.426316280170539e-07
+    },
+    {
+      "id": "scotland__uni2-h__AI_ISUP_numeric",
+      "hr_abs_error": 3.693233296964138e-07,
+      "p_abs_error": 1.923829392666554e-08
+    },
+    {
+      "id": "scotland__uni2-h__AI_Leibovich",
+      "hr_abs_error": 6.517379036452553e-08,
+      "p_abs_error": 9.440003168048605e-08
+    },
+    {
+      "id": "scotland__virchow2__AI_ISUP_numeric",
+      "hr_abs_error": 1.9447712240605597e-06,
+      "p_abs_error": 5.106210227562302e-08
+    },
+    {
+      "id": "scotland__virchow2__AI_Leibovich",
+      "hr_abs_error": 1.0404172046118987e-06,
+      "p_abs_error": 1.361749796591205e-06
+    },
+    {
+      "id": "scotland__vit_b_16__AI_ISUP_numeric",
+      "hr_abs_error": 4.874718053216043e-06,
+      "p_abs_error": 7.511306043817001e-08
+    },
+    {
+      "id": "scotland__vit_b_16__AI_Leibovich",
+      "hr_abs_error": 1.2682527477103633e-06,
+      "p_abs_error": 6.474920952737051e-07
+    }
+  ],
+  "holm_independent_numpy_check": true
+}

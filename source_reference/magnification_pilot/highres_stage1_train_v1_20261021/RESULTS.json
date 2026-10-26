@@ -1,0 +1,285 @@
+{
+  "n_cases": 120,
+  "n_G1": 60,
+  "n_G2": 60,
+  "encoders": {
+    "uni": {
+      "arms": {
+        "L": {
+          "auc_seed_averaged": 0.6869444444444445,
+          "auc_ci95": [
+            0.5863819444444444,
+            0.7777777777777778
+          ],
+          "auc_per_seed": [
+            0.6838888888888889,
+            0.6977777777777778,
+            0.6780555555555555
+          ],
+          "recall_G2_at_0_5": 0.5833333333333334,
+          "recall_G1_at_0_5": 0.6833333333333333,
+          "prior_all_wrong_G2_called_G2": 9,
+          "prior_all_called_G1_G2_called_G2": 1
+        },
+        "H": {
+          "auc_seed_averaged": 0.6969444444444445,
+          "auc_ci95": [
+            0.5997013888888889,
+            0.7838888888888889
+          ],
+          "auc_per_seed": [
+            0.6933333333333334,
+            0.6988888888888889,
+            0.6861111111111111
+          ],
+          "recall_G2_at_0_5": 0.6166666666666667,
+          "recall_G1_at_0_5": 0.6666666666666666,
+          "prior_all_wrong_G2_called_G2": 9,
+          "prior_all_called_G1_G2_called_G2": 1
+        },
+        "Hd": {
+          "auc_seed_averaged": 0.6916666666666667,
+          "auc_ci95": [
+            0.595548611111111,
+            0.7805763888888888
+          ],
+          "auc_per_seed": [
+            0.6872222222222222,
+            0.7005555555555556,
+            0.6844444444444444
+          ],
+          "recall_G2_at_0_5": 0.6166666666666667,
+          "recall_G1_at_0_5": 0.7,
+          "prior_all_wrong_G2_called_G2": 9,
+          "prior_all_called_G1_G2_called_G2": 1
+        },
+        "Lfull": {
+          "auc_seed_averaged": 0.6919444444444445,
+          "auc_ci95": [
+            0.5916597222222222,
+            0.7805694444444443
+          ],
+          "auc_per_seed": [
+            0.6905555555555556,
+            0.7,
+            0.6794444444444444
+          ],
+          "recall_G2_at_0_5": 0.6166666666666667,
+          "recall_G1_at_0_5": 0.6833333333333333,
+          "prior_all_wrong_G2_called_G2": 9,
+          "prior_all_called_G1_G2_called_G2": 1
+        }
+      },
+      "delta_H_minus_L": 0.010000000000000009,
+      "delta_H_minus_L_ci95": [
+        -0.01777777777777778,
+        0.03555555555555556
+      ],
+      "seed_delta_H_minus_L": [
+        0.009444444444444478,
+        0.0011111111111110628,
+        0.008055555555555594
+      ],
+      "delta_H_minus_Hd": 0.005277777777777826,
+      "delta_H_minus_Hd_ci95": [
+        -0.006111111111111178,
+        0.01777777777777778
+      ],
+      "seed_delta_H_minus_Hd": [
+        0.006111111111111178,
+        -0.0016666666666667052,
+        0.0016666666666667052
+      ],
+      "delta_L_minus_Lfull": -0.0050000000000000044,
+      "delta_L_minus_Lfull_ci95": [
+        -0.015277777777777724,
+        0.004173611111111059
+      ]
+    },
+    "virchow2": {
+      "arms": {
+        "L": {
+          "auc_seed_averaged": 0.7002777777777778,
+          "auc_ci95": [
+            0.5991597222222221,
+            0.7925
+          ],
+          "auc_per_seed": [
+            0.6980555555555555,
+            0.6858333333333333,
+            0.6972222222222222
+          ],
+          "recall_G2_at_0_5": 0.65,
+          "recall_G1_at_0_5": 0.6166666666666667,
+          "prior_all_wrong_G2_called_G2": 12,
+          "prior_all_called_G1_G2_called_G2": 4
+        },
+        "H": {
+          "auc_seed_averaged": 0.6844444444444444,
+          "auc_ci95": [
+            0.5819027777777778,
+            0.7739236111111109
+          ],
+          "auc_per_seed": [
+            0.6916666666666667,
+            0.6836111111111111,
+            0.6844444444444444
+          ],
+          "recall_G2_at_0_5": 0.65,
+          "recall_G1_at_0_5": 0.6,
+          "prior_all_wrong_G2_called_G2": 10,
+          "prior_all_called_G1_G2_called_G2": 2
+        },
+        "Hd": {
+          "auc_seed_averaged": 0.6838888888888889,
+          "auc_ci95": [
+            0.5805486111111111,
+            0.7744513888888889
+          ],
+          "auc_per_seed": [
+            0.6905555555555556,
+            0.6866666666666666,
+            0.6811111111111111
+          ],
+          "recall_G2_at_0_5": 0.6333333333333333,
+          "recall_G1_at_0_5": 0.6166666666666667,
+          "prior_all_wrong_G2_called_G2": 10,
+          "prior_all_called_G1_G2_called_G2": 2
+        },
+        "Lfull": {
+          "auc_seed_averaged": 0.6988888888888889,
+          "auc_ci95": [
+            0.5983333333333334,
+            0.7894652777777776
+          ],
+          "auc_per_seed": [
+            0.6944444444444444,
+            0.6919444444444445,
+            0.6963888888888888
+          ],
+          "recall_G2_at_0_5": 0.6333333333333333,
+          "recall_G1_at_0_5": 0.6666666666666666,
+          "prior_all_wrong_G2_called_G2": 10,
+          "prior_all_called_G1_G2_called_G2": 2
+        }
+      },
+      "delta_H_minus_L": -0.015833333333333366,
+      "delta_H_minus_L_ci95": [
+        -0.05973611111111112,
+        0.025000000000000022
+      ],
+      "seed_delta_H_minus_L": [
+        -0.006388888888888888,
+        -0.0022222222222222365,
+        -0.012777777777777777
+      ],
+      "delta_H_minus_Hd": 0.0005555555555555314,
+      "delta_H_minus_Hd_ci95": [
+        -0.01777777777777778,
+        0.018611111111111134
+      ],
+      "seed_delta_H_minus_Hd": [
+        0.0011111111111110628,
+        -0.003055555555555589,
+        0.0033333333333332993
+      ],
+      "delta_L_minus_Lfull": 0.001388888888888884,
+      "delta_L_minus_Lfull_ci95": [
+        -0.015562499999999988,
+        0.017222222222222142
+      ]
+    }
+  },
+  "prior_all_wrong_G2_in_sample": 22,
+  "prior_all_wrong_G2_ids": [
+    "korea:KR100",
+    "korea:KR115",
+    "korea:KR13",
+    "korea:KR143",
+    "korea:KR146",
+    "korea:KR147",
+    "korea:KR149",
+    "korea:KR165",
+    "korea:KR177",
+    "korea:KR19",
+    "korea:KR191",
+    "korea:KR228",
+    "korea:KR244",
+    "korea:KR246",
+    "korea:KR247",
+    "korea:KR257",
+    "korea:KR34",
+    "korea:KR43",
+    "korea:KR50",
+    "korea:KR57",
+    "korea:KR8",
+    "korea:KR88"
+  ],
+  "prior_list_label_mismatch": [],
+  "prior_all_called_G1_in_sample": 14,
+  "prior_all_called_G1_ids": [
+    "korea:KR100",
+    "korea:KR115",
+    "korea:KR143",
+    "korea:KR146",
+    "korea:KR147",
+    "korea:KR149",
+    "korea:KR177",
+    "korea:KR191",
+    "korea:KR228",
+    "korea:KR244",
+    "korea:KR246",
+    "korea:KR247",
+    "korea:KR257",
+    "korea:KR88"
+  ],
+  "decision": {
+    "verdict": "INCONCLUSIVE_USER_DECIDES",
+    "per_encoder": {
+      "uni": {
+        "advance": false,
+        "negative": false,
+        "delta": 0.010000000000000009,
+        "seed_deltas": [
+          0.009444444444444478,
+          0.0011111111111110628,
+          0.008055555555555594
+        ],
+        "H_minus_Hd": 0.005277777777777826,
+        "all_seed_deltas_positive": true,
+        "seed_directions_consistent": true
+      },
+      "virchow2": {
+        "advance": false,
+        "negative": true,
+        "delta": -0.015833333333333366,
+        "seed_deltas": [
+          -0.006388888888888888,
+          -0.0022222222222222365,
+          -0.012777777777777777
+        ],
+        "H_minus_Hd": 0.0005555555555555314,
+        "all_seed_deltas_positive": false,
+        "seed_directions_consistent": true
+      }
+    },
+    "rule": "PROTOCOL.md section 6"
+  },
+  "code_signature": "26fd7cc1201ba7d357f9f98bc42e292b29b1338b5828de0c31bbcdf62902912b",
+  "platform": [
+    {
+      "capability": [
+        8,
+        6
+      ],
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "device_type": "cuda",
+      "gpu": "NVIDIA RTX A6000",
+      "torch": "2.6.0+cu124"
+    }
+  ],
+  "finished": "2026-10-22T10:22:57+08:00",
+  "runs": 120,
+  "prior_list_sha256": "3db78344c9330312709e870430efba28e18a07a730f7ff26969d931bd7e2048e"
+}

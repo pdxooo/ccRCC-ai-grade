@@ -1,0 +1,55 @@
+42 models fitted; 10 core fits.
+   cohort   encoder               model                 term      p_raw
+    korea phikon-v2     AI_ISUP_numeric                 isup 0.52769442
+    korea phikon-v2     AI_ISUP_numeric             ai_grade 0.88237142
+    korea phikon-v2     AI_ISUP_numeric               GLOBAL 0.75142297
+    korea phikon-v2        AI_Leibovich    leibovich_fuhrman 0.06978944
+    korea phikon-v2        AI_Leibovich             ai_grade 0.76309998
+    korea phikon-v2        AI_Leibovich               GLOBAL 0.15107791
+    korea phikon-v2 AI_ISUP_categorical             isup_cat 0.78186446
+    korea phikon-v2 AI_ISUP_categorical             ai_grade 0.90586868
+    korea phikon-v2 AI_ISUP_categorical               GLOBAL 0.86114793
+    korea phikon-v2        HE_Leibovich    leibovich_fuhrman 0.07244121
+    korea phikon-v2        HE_Leibovich he_risk_standardised 0.41933635
+    korea phikon-v2        HE_Leibovich               GLOBAL 0.19171149
+    korea       uni        HE_Leibovich    leibovich_fuhrman 0.06323849
+    korea       uni        HE_Leibovich he_risk_standardised 0.52091742
+    korea       uni        HE_Leibovich               GLOBAL 0.16458446
+ scotland phikon-v2     AI_ISUP_numeric                 isup 0.48598671
+ scotland phikon-v2     AI_ISUP_numeric             ai_grade 0.14666293
+ scotland phikon-v2     AI_ISUP_numeric               GLOBAL 0.34449212
+ scotland phikon-v2        AI_Leibovich    leibovich_fuhrman 0.09234780
+ scotland phikon-v2        AI_Leibovich             ai_grade 0.19739374
+ scotland phikon-v2        AI_Leibovich               GLOBAL 0.23108786
+ scotland phikon-v2 AI_ISUP_categorical             isup_cat 0.14291162
+ scotland phikon-v2 AI_ISUP_categorical             ai_grade 0.11558697
+ scotland phikon-v2 AI_ISUP_categorical               GLOBAL 0.12812066
+ scotland phikon-v2        HE_Leibovich    leibovich_fuhrman 0.12786982
+ scotland phikon-v2        HE_Leibovich he_risk_standardised 0.45970460
+ scotland phikon-v2        HE_Leibovich               GLOBAL 0.29199875
+ scotland       uni        HE_Leibovich    leibovich_fuhrman 0.09258904
+ scotland       uni        HE_Leibovich he_risk_standardised 0.13058757
+ scotland       uni        HE_Leibovich               GLOBAL 0.18866040
+
+Holm screen
+   cohort       encoder        hr        p_raw       p_holm
+    korea         conch  6.182454 7.934272e-15 7.140845e-14
+    korea convnext_tiny  4.465797 7.941443e-08 9.896748e-08
+    korea      gigapath  4.202606 1.059601e-08 5.275402e-08
+    korea     phikon-v2  4.202805 1.055080e-08 5.275402e-08
+    korea      resnet50  5.416458 5.932506e-09 3.559504e-08
+    korea           uni  4.453211 3.908304e-09 2.735813e-08
+    korea        uni2-h  4.204944 1.982131e-08 5.946394e-08
+    korea      virchow2  4.505546 3.235722e-09 2.588578e-08
+    korea      vit_b_16  5.256184 4.948374e-08 9.896748e-08
+ scotland         conch  5.159017 4.193341e-05 3.774007e-04
+ scotland convnext_tiny  8.296388 1.620960e-02 1.101954e-01
+ scotland      gigapath  2.564934 1.966697e-02 1.101954e-01
+ scotland     phikon-v2  3.264450 3.941460e-02 1.101954e-01
+ scotland      resnet50 19.833341 2.312891e-03 1.850313e-02
+ scotland           uni  2.671122 7.495024e-02 1.101954e-01
+ scotland        uni2-h  3.036500 1.574220e-02 1.101954e-01
+ scotland      virchow2  3.446730 2.264056e-02 1.101954e-01
+ scotland      vit_b_16  5.928437 3.197190e-02 1.101954e-01
+
+Time sensitivities: 0 

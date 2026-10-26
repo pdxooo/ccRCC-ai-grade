@@ -1,0 +1,1 @@
+The code is publicly readable. An open-source licence has not been selected for original study code. Public visibility does not grant rights beyond applicable law and platform terms. Third-party dependencies, pretrained weights and source data retain their own licences. The archived metadata for S-BIAD2452 and S-BIAD2454 specifies CC0.

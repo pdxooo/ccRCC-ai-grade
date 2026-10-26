@@ -1,0 +1,18 @@
+[
+  {
+    "accession": "S-BIAD2452",
+    "url": "https://www.ebi.ac.uk/bioimage-archive/studies/S-BIAD2452/",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "evidence": "Archived official BioImage Archive metadata",
+    "archived_metadata_sha256": "3509153394c68835c66895ac56b9c6dac44a1ba152f9a31ec4ea45c16cc0b8e7"
+  },
+  {
+    "accession": "S-BIAD2454",
+    "url": "https://www.ebi.ac.uk/bioimage-archive/studies/S-BIAD2454/",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "evidence": "Archived official BioImage Archive metadata",
+    "archived_metadata_sha256": "71e1fb7c5e9c538e6c9156962dfe472e32bdf308b871ef9d33c5b2bf04be84d1"
+  }
+]

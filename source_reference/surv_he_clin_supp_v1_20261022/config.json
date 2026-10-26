@@ -1,0 +1,16 @@
+{
+  "version": "surv_he_clin_supp_v1_20261022",
+  "plan_for": "surv_he_clin_v1_20261022 (secondary analyses; PROTOCOL.md here)",
+  "surv1_dir": "../surv_he_clin_v1_20261022",
+  "surv1_lock_sha256": "3ba39ee08be3746ab7605ac20f5525d36d5ad342d5b27bbd78b3228e5425f062",
+  "horizon_months": 36,
+  "auc_months": [36, 60],
+  "uno_tau_months": 60,
+  "leibovich_groups": {"low": [0, 2], "intermediate": [3, 5], "high": [6, 11]},
+  "calibration_groups": {"korea": 5, "scotland": 3},
+  "dca_thresholds": [0.02, 0.501, 0.01],
+  "dca_report": [0.1, 0.2, 0.3],
+  "nri_categories": [0.1, 0.3],
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261025
+}

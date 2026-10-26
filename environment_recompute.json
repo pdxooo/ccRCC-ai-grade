@@ -1,0 +1,6 @@
+{
+  "python": "3.14.5",
+  "numpy": "2.5.4",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "scope": "Main-result recomputation only; not the historical training environment"
+}

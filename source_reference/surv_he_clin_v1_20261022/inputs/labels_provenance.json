@@ -1,0 +1,23 @@
+{
+ "sources": {
+  "korea_clinical.xlsx": {
+   "sha256": "0c600a8798a44604d18225edcf7eb6706103081694ffb7375a8fea3fa673c530"
+  },
+  "scotland_clinical.xlsx": {
+   "sha256": "f7ae8885cfe26b38f4fd52e7f47b7a53d0b2f49c94f4e993f13827637b1338fd"
+  },
+  "korea_analysis.xlsx": {
+   "sha256": "565159d2550fb75ac80ec7deffb7b1a525bf5bbf87c9b1cae32ca215ad50707c"
+  },
+  "scotland_analysis.xlsx": {
+   "sha256": "f485d9331777e38a98e5060558876636119da8449b13be806093217c2838236a"
+  }
+ },
+ "outputs": {
+  "korea_surv.csv": "aa936e2faea9ba7cbebd15dbe03f6be9b17f1cd14066896c04314cebdc2f2e85",
+  "scotland_surv.csv": "6486671a6581495658da0f488e02d65fd5e62a42e19734c5187a8b318c3d655e",
+  "korea_if.csv": "98a798b246828ea0f7ec5492f684d8fb10cf9967ada9494b67fd12bd4edf3dc7",
+  "scotland_if.csv": "553c76739c242d9f94e754e6285e48b06cbdf2db5752cd156867fa0b77797fb7"
+ },
+ "decision": "database tables are the ground truth (user, 2026-10-21); paper discrepancies disclosed only"
+}
