@@ -39,4 +39,3 @@ The repository is publicly accessible. Publication of the files does not itself 
 
 Result recomputation is tested. Full retraining from the original images is not: complete retained coordinates, cached features, trained checkpoints and raw historical run receipts are not included. Training-source Python files were syntax-checked, not rerun end to end. The guide distinguishes exported evidence from missing training artefacts; no missing material is represented as present.
 
-OpenAI Codex assisted manuscript editing, code review and statistical verification; the authors remain responsible for the research record.
