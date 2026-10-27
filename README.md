@@ -1,6 +1,6 @@
 # Continuous AI grading of clear cell renal cell carcinoma
 
-Code and derived results for **External validation of a continuous AI grade for clear cell renal cell carcinoma**. This repository accompanies a manuscript prepared for submission; it does not imply journal acceptance.
+Code and derived results for **Histological heterogeneity and prognostic assessment with continuous AI grading in clear cell renal cell carcinoma**. This repository accompanies a manuscript prepared for submission; it does not imply journal acceptance.
 
 ## Reproduce the main results
 
